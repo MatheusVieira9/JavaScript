@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        h1#titulo_calc {
+            text-align: center;
+        }
+        input.input_calc {
+            box-shadow: 1px 1px 4px 1px black;
+            border-color: blue;
+            text-align: center;
+        }
+        input.input_calc:hover {
+            box-shadow: 0px 0px 0px 0px black;
+        }
+        div#total {
+            padding-top: 10px;
+        }
+        div#calculadora {
+            padding-top: 50px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo_calc">Somando valores</h1>
+    </header>
+    <div id="calculadora">
+        <div id="calc_tools">
+            <input type="number" name="txt1" id="num1" class="input_calc"> +
+            <input type="number" name="txt2" id="num2" class="input_calc">
+            <input type="button" value="somar" id="soma">
+        </div>
+        <div class="total">
+            <h3 id="total"></h3>
+        </div>
+    </div>
+    <script>
+        var botao = document.getElementById('soma')
+        botao.addEventListener('click', somar)
+
+        function somar(){
+        var tn1 = window.document.querySelector("input#num1")
+        var tn2 = window.document.querySelector("input#num2")
+        var resultado = window.document.getElementById('total')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var total = n1 + n2;
+        resultado.innerHTML = `O total é: ${total}`}
+    </script>
+</body>
+</html>

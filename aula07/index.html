@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multa</title>
+</head>
+<body>
+    <h1>Sistema de Multa</h1>
+    <p>Velocidade do Carro: <input type="number" name="velocidade" id="car_velocidade">Km/h <input type="button" value="calcular" id="calcular"></p>
+    <div>
+        <p id="velocidade"></p>
+    </div>
+    <div>
+        <p id="aviso"></p>
+    </div>
+    <div>
+        <p id="previnir"></p>
+    </div>
+    
+    <script>
+        var calcular = document.querySelector('input#calcular')
+        calcular.addEventListener('click', calculo)
+
+        function calculo(){
+            var car_velocidade = document.querySelector('input#car_velocidade')
+            var velocidade = document.querySelector('p#velocidade')
+            var aviso = document.querySelector('p#aviso')
+            var previnir = document.querySelector('p#previnir')
+            var valor_velocidade = Number(car_velocidade.value)
+
+            if (valor_velocidade > 60){
+                velocidade.innerHTML = `Sua velocidade é de ${valor_velocidade}Km/h`
+                aviso.innerHTML = 'Você será <strong>Multado</strong> por ultrapassar o limite de 60Km/h da rodovia &#x1F46E'
+            } else{
+                velocidade.innerHTML = `Sua velocidade é de ${valor_velocidade}Km/h`
+            }
+            previnir.innerHTML = 'Dirija sempre com cinto de segurança &#x1F697'
+        }
+    </script>
+</body>
+</html>
