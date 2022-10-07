@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: #000000;
+    background-attachment: fixed;
+}
+header {
+    color: #ffffff;
+    text-align: center;
+}
+main {
+    background-color: white;
+
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    margin: auto; 
+}
+div.texto_resposta {
+    font: 1.5em;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+div#imagem_resposta {
+    text-align: center;
+}
+img.imagem_img {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+}
+div.div_input {
+    padding-left: 40px;
+}
+input#verificar {
+    border: solid;
+    background-color: aquamarine;
+}
