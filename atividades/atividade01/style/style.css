@@ -17,13 +17,16 @@ main {
     margin: auto; 
 }
 div.texto_resposta {
-    font: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    max-width: 320px;
     padding-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 div#imagem_resposta {
-    text-align: center;
+    max-width: 320px;
+    margin: auto;
 }
 img.imagem_img {
     height: 320px;
@@ -34,6 +37,7 @@ div.div_input {
     padding-left: 40px;
 }
 input#verificar {
-    border: solid;
-    background-color: aquamarine;
+    background-color: rgba(232, 231, 244, 0.655);
+    border: none;
+    padding: 5px;
 }

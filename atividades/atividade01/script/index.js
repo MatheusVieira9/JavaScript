@@ -7,7 +7,6 @@ let resposta = document.querySelector('div.texto_resposta')
 let imagem = document.getElementById('imagem_resposta')
 let verificar = document.querySelector('input#verificar')
 
-
 verificar.addEventListener('click', horas)
 
 function texto_resposta() {
@@ -30,22 +29,22 @@ function por_sol(){
     imagem.innerHTML = '<img src="images/por_sol.jpg" alt="Imagem de tarde" class="imagem_img"></img>'
 }
 function noite(){
-    corpo.style.backgroundColor = '#18181C'
+    corpo.style.backgroundImage = 'linear-gradient(180deg, #18181C, #0077F0)'
+    corpo.style.backgroundAttachment= 'fixed'
     imagem.innerHTML='<img src="images/noite.jpg" alt="Imagem de tarde" class="imagem_img"></img>'
 }
 function horas(){
-    let input_horas = document.getElementById("que_horas")
-    input_horas = Number(input_horas.value)
+    texto_resposta()
 
-    if(input_horas >= 4 && input_horas < 7){
+    if(hora_now >= 4 && hora_now < 7){
         console.log('manhã')
         cedo()
     }
-    else if(input_horas >= 16 && input_horas < 18 ){
+    else if(hora_now >= 16 && hora_now < 18 ){
         console.log('Por do sol')
         por_sol()
     }
-    else if(input_horas < 4 || input_horas >= 18){
+    else if(hora_now < 4 || hora_now >= 18){
         console.log('noite')
         noite()
     }
