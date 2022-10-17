@@ -6,6 +6,7 @@ let corpo = document.body
 let resposta = document.querySelector('div.texto_resposta')
 let imagem = document.getElementById('imagem_resposta')
 let verificar = document.querySelector('input#verificar')
+var tempo = true
 
 verificar.addEventListener('click', horas)
 

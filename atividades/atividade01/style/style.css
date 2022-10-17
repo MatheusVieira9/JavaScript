@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0px;
-    background-color: #000000;
+    background-color: #ffffff;
     background-attachment: fixed;
 }
 header {
@@ -9,7 +9,7 @@ header {
     text-align: center;
 }
 main {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.096);
 
     width: 1000px;
     height: 600px;
@@ -40,4 +40,7 @@ input#verificar {
     background-color: rgba(232, 231, 244, 0.655);
     border: none;
     padding: 5px;
+}
+.cr{
+    text-align:center;
 }
