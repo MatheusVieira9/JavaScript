@@ -2,6 +2,7 @@ let now = new Date()
 var hora_now = now.getHours()
 var minuto_now = now.getMinutes()
 var segundos_now = now.getSeconds()
+
 let corpo = document.body
 let resposta = document.querySelector('div.texto_resposta')
 let imagem = document.getElementById('imagem_resposta')
@@ -13,6 +14,7 @@ verificar.addEventListener('click', horas)
 function texto_resposta() {
     resposta.innerHTML=`<p>Agora são ${hora_now}:${minuto_now}:${segundos_now}</p>`
     console.log(`${hora_now}:${minuto_now}:${segundos_now}`)
+    setTimeout('texto_resposta()', 500)
 }
 function cedo(){
     corpo.style.backgroundImage = 'linear-gradient(180deg, #f7cb81, #D85D42)'
@@ -34,6 +36,7 @@ function noite(){
     corpo.style.backgroundAttachment= 'fixed'
     imagem.innerHTML='<img src="images/noite.jpg" alt="Imagem de tarde" class="imagem_img"></img>'
 }
+
 function horas(){
     texto_resposta()
 
