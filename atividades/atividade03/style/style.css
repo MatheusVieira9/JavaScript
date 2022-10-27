@@ -1,0 +1,25 @@
+body {
+    background-color: #000000;
+    font-family: sans-serif;
+}
+header {
+    color: #ffffff;
+    text-align: center;
+
+    padding: 1%;
+}
+main {
+    background-color: #ffffff;
+
+    max-width: 900px;
+    margin: auto;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+.botao {
+    margin: 1%;
+}
+.foot {
+    color: #ffffff;
+    text-align: center;
+}
